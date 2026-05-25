@@ -9,24 +9,19 @@
     body{font-family:'Segoe UI',Arial,sans-serif;background:#eef1f6;color:#222}
     .site-header{background:#003366}
     .header-top{background:#00244d;padding:7px 24px;font-size:12px;color:rgba(255,255,255,.55);text-align:right}
-    .header-main{display:flex;align-items:center;gap:16px;padding:14px 24px}
-    .header-main img{height:50px;width:auto}
+    .header-main{display:flex;align-items:center;gap:16px;padding:16px 28px}
+    .header-main img{height:52px;width:auto}
     .header-text h1{font-size:17px;font-weight:700;color:#fff}
     .header-text p{font-size:12px;color:rgba(255,255,255,.55);margin-top:2px}
-    .header-nav{background:#002a5c;padding:0 24px;display:flex;gap:0;flex-wrap:wrap}
-    .header-nav a{display:block;padding:9px 16px;font-size:12px;color:rgba(255,255,255,.7);text-decoration:none;border-bottom:3px solid transparent}
-    .header-nav a.active,.header-nav a:hover{color:#fff;border-bottom-color:#c8a84b}
-    .page{max-width:920px;margin:28px auto;padding:0 14px 60px}
-    .breadcrumb{font-size:12px;color:#888;margin-bottom:16px}
-    .breadcrumb a{color:#003366;text-decoration:none}
-    .breadcrumb span{margin:0 5px}
+    .gold-line{height:3px;background:linear-gradient(90deg,#c8a84b,#e8d48a,#c8a84b)}
+    .page{max-width:920px;margin:32px auto;padding:0 14px 60px}
     .card{background:#fff;border-radius:10px;box-shadow:0 2px 18px rgba(0,0,0,.09);overflow:hidden}
-    .card-head{background:#1a5c1a;padding:16px 28px;display:flex;align-items:center;gap:14px}
+    .card-head{background:#003366;padding:16px 28px;display:flex;align-items:center;gap:14px}
     .card-head-icon{width:40px;height:40px;border-radius:50%;background:rgba(200,168,75,.2);border:1.5px solid #c8a84b;display:flex;align-items:center;justify-content:center;flex-shrink:0}
     .card-head-icon svg{width:20px;height:20px;fill:#c8a84b}
     .card-head-text h2{font-size:14px;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.06em}
     .card-head-text p{font-size:11px;color:rgba(255,255,255,.5);margin-top:2px}
-    .gold-line{height:3px;background:linear-gradient(90deg,#c8a84b,#e8d48a,#c8a84b)}
+    .card-gold{height:3px;background:linear-gradient(90deg,#c8a84b,#e8d48a,#c8a84b)}
     .info-table{width:100%;border-collapse:collapse}
     .info-table tr{border-bottom:1px solid #f2f2f2}
     .info-table tr:last-child{border-bottom:none}
@@ -34,13 +29,13 @@
     .lbl{width:185px;font-weight:600;color:#334;white-space:nowrap}
     .sep{width:16px;color:#bbb;text-align:center}
     .val{color:#222}
-    .val.bold{font-weight:700;color:#1a5c1a}
+    .val.bold{font-weight:700;color:#003366}
     .val-section{padding:18px 28px 4px}
     .section-label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#888;margin-bottom:12px}
     .val-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(165px,1fr));gap:10px;margin-bottom:20px}
-    .val-box{background:#f4f7fb;border-radius:7px;padding:11px 14px;border-left:3px solid #4a9c4a}
+    .val-box{background:#f4f7fb;border-radius:7px;padding:11px 14px;border-left:3px solid #c8a84b}
     .vlbl{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:#888;margin-bottom:4px}
-    .vval{font-size:13.5px;font-weight:600;color:#1a5c1a}
+    .vval{font-size:13.5px;font-weight:600;color:#003366}
     .status-row{padding:4px 28px 26px;display:flex;align-items:center;gap:14px;flex-wrap:wrap}
     .badge-active{display:inline-flex;align-items:center;gap:8px;background:#e6f7ee;color:#1a7a4a;border:1.5px solid #1a7a4a44;padding:9px 22px;border-radius:999px;font-size:14px;font-weight:700}
     .badge-active::before{content:'';width:9px;height:9px;border-radius:50%;background:#1a7a4a;display:inline-block}
@@ -54,17 +49,14 @@
     @media(max-width:540px){
       .lbl{width:110px;font-size:13px}
       .info-table td{padding:10px 14px;font-size:13px}
-      .val-section{padding:14px 14px 4px}
-      .status-row{padding:4px 14px 20px}
-      .img-section{padding:14px 14px 20px}
-      .img-section img{max-width:110px}
+      .val-section,.status-row,.img-section{padding-left:14px;padding-right:14px}
+      .header-main{padding:12px 16px}
       .header-main img{height:38px}
       .header-text h1{font-size:14px}
     }
   </style>
 </head>
 <body>
-
 <header class="site-header">
   <div class="header-top">Working Hours: 8:00 AM – 5:00 PM &nbsp;|&nbsp; mmsindonesia.co.id</div>
   <div class="header-main">
@@ -74,22 +66,10 @@
       <p>MMS Indonesia – Lembaga Sertifikasi ISO</p>
     </div>
   </div>
-  <nav class="header-nav">
-    <a href="index.html">Beranda (QMS)</a>
-    <a href="ems341240662.html" class="active">EMS341240662</a>
-    <a href="ohs342240301.html">OHS342240301</a>
-  </nav>
+  <div class="gold-line"></div>
 </header>
-
 <div class="page">
-  <div class="breadcrumb">
-    <a href="#">Home</a><span>›</span>
-    <a href="#">Sertifikasi ISO</a><span>›</span>
-    EMS341240662
-  </div>
-
   <div class="card">
-
     <div class="card-head">
       <div class="card-head-icon">
         <svg viewBox="0 0 24 24"><path d="M12 2L3 7v10l9 5 9-5V7L12 2zm0 2.18l7 3.89v8.86l-7 3.89-7-3.89V8.07l7-3.89z"/></svg>
@@ -99,18 +79,14 @@
         <p>PT. Mutiara Manajemen Sertifikasi – MMS Indonesia</p>
       </div>
     </div>
-
-    <div class="gold-line"></div>
-
+    <div class="card-gold"></div>
     <table class="info-table">
       <tr><td class="lbl">Nama Perusahaan</td><td class="sep">:</td><td class="val bold">CV. NAGA KENCANA WIRATAMA</td></tr>
       <tr><td class="lbl">Alamat Perusahaan</td><td class="sep">:</td><td class="val">Jl. Pegasangan IV Kencana II No. 25 RT. 003 RW. 003, Pegesangan Village, Jambangan District, Surabaya, East Java Province – Indonesia.</td></tr>
       <tr><td class="lbl">Standard</td><td class="sep">:</td><td class="val bold">ISO 14001:2015 – Environmental Management System</td></tr>
       <tr><td class="lbl">Ruang Lingkup</td><td class="sep">:</td><td class="val">Provision of Construction for Commercial Buildings, Residential Buildings, Multi Buildings, Education Buildings, Health Buildings, Sports Stadiums, Sports Facilities, Waterways, Harbors, Dams, Water Resources Infrastructure, Highways (Except Overpasses), Roads, Railways, Airport Runways, Tunnels and Subways.</td></tr>
     </table>
-
-    <div class="gold-line"></div>
-
+    <div class="card-gold"></div>
     <div class="val-section">
       <div class="section-label">Informasi Validasi</div>
       <div class="val-grid">
@@ -121,21 +97,17 @@
         <div class="val-box"><div class="vlbl">Berlaku Hingga</div><div class="vval">19 April 2027</div></div>
       </div>
     </div>
-
     <div class="status-row">
       <span class="badge-active">ACTIVE / VALID</span>
       <span class="status-note">Berlaku sampai: <strong>19 April 2027</strong></span>
     </div>
-
     <div class="img-section">
       <img src="mms-logo.png" alt="MMS Logo">
       <img src="iso9001-status.png" alt="ISO Badge">
       <img src="active.png" alt="Status Active">
     </div>
-
   </div>
 </div>
-
 <footer class="site-footer">
   <strong>PT. Mutiara Manajemen Sertifikasi – MMS Indonesia</strong><br>
   <a href="https://mmsindonesia.co.id">mmsindonesia.co.id</a> &nbsp;|&nbsp; &copy; 2025 MMS Indonesia
